@@ -1,0 +1,128 @@
+/* Basic and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background: linear-gradient(135deg, #4caf50, #2196f3, #03a9f4, #9c27b0, #e91e63); /* Gradient from green to blue to sky blue to purple to pink */
+    color: #333; /* Dark text color */
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #81c784, #64b5f6, #4fc3f7, #ab47bc, #f48fb1); /* Gradient from light green to light blue to sky blue to purple to pink */
+}
+
+.contact-container {
+    background-color: #ffffff; /* White container background color */
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for soft effect */
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #f06292; /* Pink text color */
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #f06292; /* Pink text color */
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #f06292; /* Pink text color */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c2185b; /* Dark pink border color */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffffff; /* White input background color */
+    color: #333; /* Dark text color */
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #f06292; /* Pink focus border color */
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #4caf50, #2196f3, #03a9f4, #9c27b0, #e91e63); /* Gradient button color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(135deg, #388e3c, #1976d2, #0288d1, #7b1fa2, #d81b60); /* Darker gradient on hover */
+}
+
+.contact-form .error-msg,
+.contact-form .success-msg {
+    font-size: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.contact-form .error-msg {
+    color: #d32f2f; /* Error message color */
+}
+
+.contact-form .success-msg {
+    color: #4caf50; /* Success message color */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
